@@ -10,7 +10,7 @@ dataSources:
     name: ENSRegistry
     network: mainnet
     source:
-      address: '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+      address: '0xdD76e2F3B983475c9466375A97D6C2c7419Adb95'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -37,7 +37,7 @@ dataSources:
     name: ENSRegistryOld
     network: mainnet
     source:
-      address: '0x314159265dd8dbb310642f98f50c066173c1259b'
+      address: '0x5a005BAd3df0BD04b9A88BA26405cBE225ad0C50'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -90,7 +90,9 @@ dataSources:
           handler: handleAddrChanged
         - event: 'AddressChanged(indexed bytes32,uint256,bytes)'
           handler: handleMulticoinAddrChanged
-        - event: 'AuthorisationChanged(indexed bytes32,indexed address,indexed address,bool)'
+        - event: >-
+            AuthorisationChanged(indexed bytes32,indexed address,indexed
+            address,bool)
           handler: handleAuthorisationChanged
         - event: 'ContenthashChanged(indexed bytes32,bytes)'
           handler: handleContentHashChanged
@@ -106,7 +108,7 @@ dataSources:
     name: BaseRegistrar
     network: mainnet
     source:
-      address: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85'
+      address: '0x87142690AdB3D228780C7D8602F658b684D9EE0f'
       abi: BaseRegistrar
     mapping:
       kind: ethereum/events
@@ -132,7 +134,7 @@ dataSources:
     name: EthRegistrarController
     network: mainnet
     source:
-      address: '0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5'
+      address: '0x0f44262b6B487Ef4f44183b2D39aE92fe5CDe1f6'
       abi: EthRegistrarController
     mapping:
       kind: ethereum/events
@@ -145,7 +147,9 @@ dataSources:
         - name: EthRegistrarController
           file: ./abis/EthRegistrarController.json
       eventHandlers:
-        - event: 'NameRegistered(string,indexed bytes32,indexed address,uint256,uint256)'
+        - event: >-
+            NameRegistered(string,indexed bytes32,indexed
+            address,uint256,uint256)
           handler: handleNameRegisteredByController
         - event: 'NameRenewed(string,indexed bytes32,uint256,uint256)'
           handler: handleNameRenewedByController
