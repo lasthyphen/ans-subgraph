@@ -62,7 +62,7 @@ dataSources:
           handler: handleNewTTLOldRegistry
   - kind: ethereum/contract
     name: Resolver
-    network: mainnet
+    network: fuji
     source:
       abi: Resolver
     mapping:
