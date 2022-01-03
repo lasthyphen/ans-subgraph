@@ -10,7 +10,7 @@ dataSources:
     name: ENSRegistry
     network: fuji
     source:
-      address: '0x1F68692D58bABeDC2549a49a2F73cf05fc078af1'
+      address: '0x36479f8eB17e2C7e05427E3c121E80ff3f8017C9'
       abi: EnsRegistry
     mapping:
       kind: ethereum/events
@@ -108,7 +108,7 @@ dataSources:
     name: BaseRegistrar
     network: fuji
     source:
-      address: '0x4fBef92Cec178E41F86a2a0509AadbE0e08654B5'
+      address: '0xcfCBE461A002FFc38905e7A24b71E1Ad01980EB4'
       abi: BaseRegistrar
     mapping:
       kind: ethereum/events
@@ -134,7 +134,7 @@ dataSources:
     name: EthRegistrarController
     network: fuji
     source:
-      address: '0x120C8825D2fc4519E153c358147eA0813842843d'
+      address: '0x4BEf85c6063bf5b1fB13816f1d383C50aA698566'
       abi: EthRegistrarController
     mapping:
       kind: ethereum/events
